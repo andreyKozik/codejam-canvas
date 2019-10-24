@@ -4,36 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
   <title>codejam-canvas</title>
 </head>
 <body>
-  <header>
-    <div class="menu"></div>
-    <div class="name-application"></div>
-    <div class="shape"></div>
+  <header class="header">
+    <div class="menu"><img src="/data/icon/menu.svg" alt="menu"></div>
+    <div class="name-application"><p>CodeJam - Pallete</p></div>
+    <div class="shape"><img src="/data/icon/shape.svg" alt="shape"></div>
   </header>
-  <div class="side-panel">
-    <section class="img">
-      <div class="4x4"></div>
-      <div class="32x32"></div>
-      <div class="256x256"></div>
-    </section>
-    <section>
-      <div class="paint-bucket"></div>
-      <div class="choose-color"></div>
-      <div class="move"></div>
-      <div class="transform"></div>
-    </section>
-    <section>
-      <div class="current-color"></div>
-      <div class="prev-color"></div>
-      <div class="red"></div>
-      <div class="blue"></div>
-    </section>
-  </div>
-  <div class="canvas">
-
+  <div class="body">
+    <div class="side-panel">
+      <section class="img">
+        <div class="size4x4"><p>Size 4x4</p></div>
+        <div class="size32x32"><p>Size 32x32</p></div>
+        <div class="size256x256"><p>Size 256x256</p></div>
+      </section>
+      <section class="tools">
+        <div class="paint-bucket"><img class="margin_tools" src="/data/icon/paint_bucket.svg" alt="paint_bucket"><p>Paint bucket</p></div>
+        <div class="choose-color"><img class="margin_tools" src="/data/icon/choose_color.svg" alt="choose_color"><p>Choose color</p></div>
+        <div class="move"><img class="margin_tools" src="/data/icon/move.svg" alt="move"><p>Move</p></div>
+        <div class="transform"><img class="margin_tools" src="/data/icon/transform.svg" alt="transform"><p>Transform</p></div>
+      </section>
+      <section class="color-tools">
+        <div class="current-color"><div class="margin_color-tools"></div><p>Current color</p></div>
+        <div class="prev-color"><div class="margin_color-tools"></div><p>Prev color</p></div>
+        <div class="red"><div class="margin_color-tools"></div><p>Red</p></div>
+        <div class="blue"><div class="margin_color-tools"></div><p>Blue</p></div>
+      </section>
+    </div>
+    <div class="canvas-block">
+      <div class="canvas-block_area"></div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
