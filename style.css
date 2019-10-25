@@ -306,3 +306,11 @@
   height: 512px;
   border: 1px solid rgba(0, 0, 0, 0.541327);
 }
+
+/* стили для кнопок */
+
+.active {
+  width: 100%;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
