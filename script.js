@@ -2,7 +2,7 @@ document.querySelector('.size4x4').addEventListener('click', function () {
     document.querySelector('.size4x4').classList.add('active')
     document.querySelector('.size32x32').classList.remove('active')
     document.querySelector('.size256x256').classList.remove('active')
-    fetch("/data/json/4x4.json")
+    fetch("../codejam-canvas/data/json/4x4.json")
     .then(response => response.json())
     .then(function (json) { 
         var canvas = document.querySelector("canvas"), // Select our canvas element
@@ -29,7 +29,7 @@ document.querySelector('.size32x32').addEventListener('click', function () {
     document.querySelector('.size4x4').classList.remove('active')
     document.querySelector('.size32x32').classList.add('active')
     document.querySelector('.size256x256').classList.remove('active')
-    fetch("/data/json/32x32.json")
+    fetch("../codejam-canvas/data/json/32x32.json")
     .then(response => response.json())
     .then(function (json) {
         var canvas = document.querySelector("canvas"), // Select our canvas element
@@ -62,6 +62,6 @@ document.querySelector('.size256x256').addEventListener('click', function () {
     img.onload = function () {
         ctx.drawImage(img, 0, 0, 512, 512);
     };
-    img.src = '/data/json/image.png';
+    img.src = '../codejam-canvas/data/json/image.png';
 });
     
